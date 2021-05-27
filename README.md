@@ -135,5 +135,20 @@ struct ItemModification: Codable {
 </div>
 </details>
 
+<br>
 
+# Step 2
+### 스토리보드
+- View 
+  - CustomTableViewCell - xib
+  - CustomCollectionViewCell - xib
+- Segmented Control
+<br>
 
+# trouble shooting
+1. Type `ItemModification` does not conform to protocol `Decodable`
+    - API 모델 타입 구현 시, `CodingKey` 를 통해 case를 재정의 할때 선언된 변수명과 일치하는지 확인해야한다. 
+    - 스펠링 오타로 인해 발생한 오류! 대충 보았을 때 왜 틀린지 알기 어려웠다.처음엔 프로토콜을 잘못 채택했다고 생각.
+2. Thread 1: "invalid nib registered for identifier (CustomCollectionViewCell) - nib must contain exactly one top level object which must be a UITableViewCell instance"
+    - ?
+   
