@@ -48,8 +48,8 @@
 		33CB8A0E265F66FC0055A84A /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				33CB8A18265F69520055A84A /* Request */,
 				33CB8A17265F693F0055A84A /* Response */,
+				33CB8A18265F69520055A84A /* Request */,
 			);
 			path = Model;
 			sourceTree = "<group>";

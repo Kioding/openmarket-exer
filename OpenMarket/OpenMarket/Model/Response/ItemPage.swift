@@ -7,20 +7,20 @@
 
 import Foundation
 
-struct ItemPage {
-    let page: Int
-    let items: [ItemInfo]
+struct ItemPage: Decodable {
+    var page: Int
+    var items: [ItemShortInfo]
 }
 
-struct ItemInfo {
-    let id: Int
-    let title: String
-    let price: Int
-    let currency: String
-    let stock: Int
-    let discountedPrice: Int?
-    let thumbnails: [String]
-    let registrationData: Int
+struct ItemShortInfo: Decodable {
+    var id: Int
+    var title: String
+    var price: Int
+    var currency: String
+    var stock: Int
+    var discountedPrice: Int?
+    var thumbnails: [String]
+    var registrationDate: Int
     
     private enum CodingKeys: String, CodingKey {
         case id, title, price, currency, stock, thumbnails
@@ -28,3 +28,4 @@ struct ItemInfo {
         case registrationDate = "registration_date"
     }
 }
+

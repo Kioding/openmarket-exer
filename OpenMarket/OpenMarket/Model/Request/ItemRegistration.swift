@@ -7,15 +7,15 @@
 
 import Foundation
 
-struct ItemRegistration {
-    let title: String
-    let descriptions: String
-    let price: Int
-    let currency: String
-    let stock: Int
-    let discountedPrice: Int?
-    let images: [String]
-    let password: String
+struct ItemRegistration: Codable {
+    var title: String
+    var descriptions: String
+    var price: Int
+    var currency: String
+    var stock: Int
+    var discountedPrice: Int?
+    var images: [String]
+    var password: String
     
     private enum CodingKeys: String, CodingKey {
         case title, descriptions, price, currency, stock, images, password
