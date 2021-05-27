@@ -150,5 +150,7 @@ struct ItemModification: Codable {
     - API 모델 타입 구현 시, `CodingKey` 를 통해 case를 재정의 할때 선언된 변수명과 일치하는지 확인해야한다. 
     - 스펠링 오타로 인해 발생한 오류! 대충 보았을 때 왜 틀린지 알기 어려웠다.처음엔 프로토콜을 잘못 채택했다고 생각.
 2. Thread 1: "invalid nib registered for identifier (CustomCollectionViewCell) - nib must contain exactly one top level object which must be a UITableViewCell instance"
-    - ?
-   
+    - cell을 만들 때 collecionViewCell인데 tableView로 설정해서 생긴 오류
+3. Thread 1: "could not dequeue a view of kind: UICollectionElementKindCell with identifier CustomCollectionViewCell - must register a nib or a class for the identifier or connect a prototype cell in a storyboard"
+    - xib file identifier 확인
+    - nib 설정 method가 CollecionViewCell이어도 tableView에 register되어 생긴 오류. 이거 찾는데 한세월
