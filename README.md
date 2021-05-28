@@ -138,7 +138,8 @@ struct ItemModification: Codable {
 <br>
 
 # Step 2
-### 스토리보드
+### Segmented Control을 활용한 테이블뷰와 컬렉션뷰 
+![화면 기록 2021-05-27 오후 6 08 34](https://user-images.githubusercontent.com/65153742/119799191-d0e84200-bf16-11eb-9984-a4d4a2bacbc5.gif)
 - View 
   - CustomTableViewCell - xib
   - CustomCollectionViewCell - xib
