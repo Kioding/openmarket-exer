@@ -155,3 +155,5 @@ struct ItemModification: Codable {
 3. Thread 1: "could not dequeue a view of kind: UICollectionElementKindCell with identifier CustomCollectionViewCell - must register a nib or a class for the identifier or connect a prototype cell in a storyboard"
     - xib file identifier 확인
     - nib 설정 method가 CollecionViewCell이어도 tableView에 register되어 생긴 오류. 이거 찾는데 한세월
+4. Thread 1: "[<OpenMarket.CustomCollectionViewCell 0x7f9acf311080> setValue:forUndefinedKey:]: this class is not key value coding-compliant for the key Label."
+    - @IBOutlet이 제대로 연결되어 있지 않아 발생한 오류
