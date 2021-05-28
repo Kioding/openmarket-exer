@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		333AE9042660BCA70012BBB4 /* URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333AE9032660BCA70012BBB4 /* URLSession.swift */; };
 		33CB8A10265F67720055A84A /* ItemPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CB8A0F265F67720055A84A /* ItemPage.swift */; };
 		33CB8A14265F689A0055A84A /* ItemDetailInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CB8A13265F689A0055A84A /* ItemDetailInfo.swift */; };
 		33CB8A1A265F695F0055A84A /* ItemRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CB8A19265F695E0055A84A /* ItemRegistration.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		333AE9032660BCA70012BBB4 /* URLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSession.swift; sourceTree = "<group>"; };
 		33CB8A0F265F67720055A84A /* ItemPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemPage.swift; sourceTree = "<group>"; };
 		33CB8A13265F689A0055A84A /* ItemDetailInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailInfo.swift; sourceTree = "<group>"; };
 		33CB8A19265F695E0055A84A /* ItemRegistration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRegistration.swift; sourceTree = "<group>"; };
@@ -53,6 +55,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		333AE9022660BC7A0012BBB4 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				333AE9032660BCA70012BBB4 /* URLSession.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		33CB8A0E265F66FC0055A84A /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +120,7 @@
 		C70FB0F925BEF61C00C9924E /* OpenMarket */ = {
 			isa = PBXGroup;
 			children = (
+				333AE9022660BC7A0012BBB4 /* Network */,
 				33CB8A25265F81930055A84A /* Cell */,
 				33CB8A0E265F66FC0055A84A /* Model */,
 				C70FB0FA25BEF61C00C9924E /* AppDelegate.swift */,
@@ -197,6 +208,7 @@
 			files = (
 				33CB8A20265F6A090055A84A /* ItemModification.swift in Sources */,
 				33CB8A2E265F8B6D0055A84A /* CustomCollectionViewCell.swift in Sources */,
+				333AE9042660BCA70012BBB4 /* URLSession.swift in Sources */,
 				C70FB0FF25BEF61C00C9924E /* ViewController.swift in Sources */,
 				33CB8A28265F81CD0055A84A /* CustomTableViewCell.swift in Sources */,
 				33CB8A1A265F695F0055A84A /* ItemRegistration.swift in Sources */,
